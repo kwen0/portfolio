@@ -28,21 +28,21 @@ class About extends React.Component {
         ability to better people’s lives.
       </p>
     );
-    const two = (
-      <p>
-        I’m currently seeking a software engineering position.
-        I’m confident that my past experience combined with my technical skills will allow me
-        to make meaningful contributions in my next role.
-      </p>
-    );
+    // const two = (
+    //   <p>
+    //     I’m currently seeking a software engineering position.
+    //     I’m confident that my past experience combined with my technical skills will allow me
+    //     to make meaningful contributions in my next role.
+    //   </p>
+    // );
     const three = (
       <p>
-        When I’m not coding, you can find me doing yoga 🙆🏻‍♀️ lifting weights at the gym 🏋🏻‍♀️
-        meditating 🧘🏻‍♀️ journaling ✍🏻 or playing video games 🎮.
+        When I’m not coding, you can find me doing yoga, lifting weights at the gym,
+        meditating, journaling, or playing video games.
       </p>
     );
 
-    const desc_items = [one, two, three];
+    const desc_items = [one, three];
 
     var image = require("./assets/me.jpg");
 
