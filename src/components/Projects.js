@@ -32,15 +32,15 @@ class Projects extends React.Component {
         desc:
           "",
         techStack: "",
-        link: "",
-        open: ""
+        link: "https://github.com/kwen0/weather-app",
+        open: "https://kwen0.github.io/weather-app/"
       },
       "Taskbook": {
         desc:
           "",
         techStack: "",
-        link: "",
-        open: ""
+        link: "https://github.com/kwen0/todo-list",
+        open: "https://kwen0.github.io/todo-list/"
       }
     };
 
