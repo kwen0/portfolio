@@ -46,7 +46,7 @@ canvas {
   font-family: "NTR", sans-serif;
   font-size: 20px;
   max-width: 55%;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 .intro-contact {
@@ -75,14 +75,11 @@ img {
   height: auto;
   border-radius: 100px;
   box-shadow: 6px 13px 23px -5px rgba(0, 0, 0, 0.46);
-  border: 2px solid var(--green-bright);
-  margin-bottom: 40px;
+  border: 20px solid var(--green-bright);
+  margin-bottom: 35px;
 }
 
 @media only screen and (max-width: 600px) {
-  #gazi-model {
-    display: none;
-  }
 
   #intro {
     min-height: unset;
