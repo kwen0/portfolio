@@ -1,9 +1,8 @@
 import React from "react";
-import JobList from "./JobList";
-import "../styles/Experience.css";
+import "../styles/Skills.css";
 import FadeInSection from "./FadeInSection";
 
-class Experience extends React.Component {
+class Skills extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -19,10 +18,11 @@ class Experience extends React.Component {
   }
   render() {
     return (
-      <div id="experience">
+      <div id="skills">
         <FadeInSection>
           <div className="section-header ">
             <span className="section-title">/ skills</span>
+
           </div>
         </FadeInSection>
       </div>
@@ -30,4 +30,4 @@ class Experience extends React.Component {
   }
 }
 
-export default Experience;
+export default Skills;
