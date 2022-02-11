@@ -19,22 +19,22 @@ class About extends React.Component {
   render() {
     const one = (
       <p>
-        As a former healthcare professional, I loved meeting and caring for people from all walks of life, but found that I was
-        constantly craving a bigger challenge. When I was introduced to MATLab one day, I gained an immediate appreciation for the scalability
+        I am a former healthcare professional turned coder. In my previous role, I loved meeting and caring for people from all walks of life, but found that I was
+        constantly craving a bigger challenge. When I was introduced to MATLab at work one day, I gained an immediate appreciation for the scalability
         and endless possibilities that coding offers. I took a leap of faith and decided
-        to teach myself programming full-time. Web development allows me to focus in on details in a way
-        I've never been able to do before, while bringing out my creative side. As a lover of visual arts,
-        I find a lot of joy in creating visually pleasing and responsive apps that have the
+        to teach myself programming full-time. Since then, I've learned a multitude of technologies and am committed to always learning. Web development allows me to focus in on details in a way
+        I've never been able to do before, while bringing out my creative side.
+        My mission is to create visually pleasing and responsive apps that have the
         ability to better people’s lives.
       </p>
     );
-    // const two = (
-    //   <p>
-    //     I’m currently seeking a software engineering position.
-    //     I’m confident that my past experience combined with my technical skills will allow me
-    //     to make meaningful contributions in my next role.
-    //   </p>
-    // );
+    const two = (
+      <p>
+        I’m currently seeking a software engineering position.
+        I’m confident that my past experience combined with my technical skills will allow me
+        to make meaningful contributions in my next role.
+      </p>
+    );
     const three = (
       <p>
         When I’m not coding, you can find me doing yoga, lifting weights at the gym,
@@ -42,7 +42,7 @@ class About extends React.Component {
       </p>
     );
 
-    const desc_items = [one, three];
+    const desc_items = [one, two, three];
 
     var image = require("./assets/me.jpg");
 

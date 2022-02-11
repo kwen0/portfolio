@@ -3,3 +3,22 @@
   padding-top: 5%;
   padding-bottom: 5%;
 }
+
+@media only screen and (max-width: 600px) {
+  #skills {
+    padding-left: unset;
+    padding-right: unset;
+    padding-top: 30%;
+  }
+
+  .jss1 {
+    height: unset !important;
+    flex-direction: column !important;
+  }
+
+  .makeStyles-root-1 {
+    height: unset !important;
+    width: unset;
+    flex-direction: column;
+  }
+}
