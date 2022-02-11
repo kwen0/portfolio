@@ -66,6 +66,19 @@ b {
   font-size: 17px;
 }
 
+image {
+  padding-left: 40px;
+}
+
+img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 100px;
+  box-shadow: 6px 13px 23px -5px rgba(0, 0, 0, 0.46);
+  border: 2px solid var(--green-bright);
+  margin-bottom: 40px;
+}
+
 @media only screen and (max-width: 600px) {
   #gazi-model {
     display: none;

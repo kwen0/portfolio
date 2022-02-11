@@ -51,18 +51,6 @@
   font-weight: bold;
 }
 
-.about-image {
-  padding-left: 40px;
-}
-
-.about-image img {
-  max-width: 300px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 6px 13px 23px -5px rgba(0, 0, 0, 0.46);
-  border: 2px solid var(--green-bright);
-}
-
 @media only screen and (max-width: 788px) {
   .about-image img {
     max-width: 200px;
@@ -79,9 +67,6 @@
     padding-left: unset;
     padding-right: unset;
     padding-top: 30%;
-  }
-  .about-image img {
-    display: none;
   }
 
   .about-content {

@@ -44,8 +44,6 @@ class About extends React.Component {
 
     const desc_items = [one, two, three];
 
-    var image = require("./assets/me.jpg");
-
     return (
       <div id="about">
         <FadeInSection>
@@ -55,9 +53,6 @@ class About extends React.Component {
           <div className="about-content">
             <div className="about-description">
               {desc_items}
-            </div>
-            <div className="about-image">
-              <img src={image} />
             </div>
           </div>
         </FadeInSection>

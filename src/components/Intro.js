@@ -21,9 +21,13 @@ class Intro extends React.Component {
       activeKey: eventKey
     });
   }
+
   render() {
+    var image = require("./assets/me.jpg");
+
     return (
       <div id="intro">
+        <img src={image} />
         <Typist avgTypingDelay={120}>
           <span className="intro-title">
             {"hi, "}
