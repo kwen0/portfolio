@@ -1,5 +1,5 @@
 :root {
-  --dark-navy: rgb(6, 14, 39);
+  --dark-navy: #091436;
   --navy: #091436;
   --light-navy: #0d1d4d;
   --lightest-navy: rgb(48, 73, 116);
@@ -8,6 +8,6 @@
   --light-slate: #a8b2d1;
   --lightest-slate: #ccd6f6;
   --white: #e6f1ff;
-  --green-bright: #fee569;
+  --green-bright: #fce886;
   --green-tint: rgba(100, 255, 218, 0.1);
 }
