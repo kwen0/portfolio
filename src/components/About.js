@@ -11,12 +11,12 @@ function About() {
                 <div>I am a former healthcare professional turned software engineer 👩🏻‍💻</div>
                 <div>In my previous role, I loved meeting and caring for people from all walks of life, but found that I was constantly craving a bigger challenge. </div>
                 <div>
-                    In college, I took a few computer science electives for fun, and I remembered how much I appreciated the scalability and endless possibilities that coding offers. In the midst of the pandemic, I took a leap of faith to switch careers and decided to teach myself programming.
+                    When I was in college, I took a few computer science electives for fun, and I remembered how much I appreciated the scalability and endless possibilities that coding offers.
+                    I took a leap of faith to switch career paths and decided to teach myself programming.
                     I discovered that I love learning and problem-solving, and I love how programming brings out my creative side.
                 </div>
-                <div>My goal is to create visually pleasing and responsive apps that have the ability to better people’s lives 🌟</div>
-                <div>Some other things that bring me joy:
-                    yoga 🙆🏻‍♀️
+                <div>Besides coding, I also enjoy
+                    doing yoga 🙆🏻‍♀️
                     lifting weights at the gym 🏋🏻‍♀️
                     meditating 🧘🏻‍♀️
                     journaling ✍🏻
@@ -54,7 +54,7 @@ const AboutBlurb = styled.div`
     align-items: flex-start;
     gap: 1em;
     font-size: 14px;
-    width: 32vw;
+    width: 28vw;
     height: 80vh;
     font-family: 'Nunito', sans-serif;
     padding: 0em 2em;

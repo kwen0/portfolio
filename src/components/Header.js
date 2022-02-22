@@ -8,7 +8,7 @@ function Header() {
         <StyledHeader>
             <Title>Karen Wen</Title>
             <Navigation>
-                <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>Home</NavLink>
+                <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>About</NavLink>
                 <NavLink to="/skills" className={({ isActive }) => (isActive ? 'active' : '')}>Skills</NavLink>
                 <NavLink to="/projects" className={({ isActive }) => (isActive ? 'active' : '')}>Projects</NavLink>
                 <a href="https://github.com/kwen0"><BsGithub /></a>
@@ -30,7 +30,7 @@ const StyledHeader = styled.div`
 `;
 
 const Title = styled.h1`
-    font-family: "Molle";
+    font-family: 'Molle';
     font-size: 40px;
     margin: 0px;
     padding-bottom: 0.2em;
