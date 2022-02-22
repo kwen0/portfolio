@@ -11,12 +11,12 @@ function About() {
                 <div>I am a former healthcare professional turned software engineer 👩🏻‍💻</div>
                 <div>In my previous role, I loved meeting and caring for people from all walks of life, but found that I was constantly craving a bigger challenge. </div>
                 <div>
-                    I took a few computer science electives in college just for fun, and I remembered how much I appreciated the scalability and endless possibilities that coding offered. In the midst of the pandemic, I took a leap of faith to switch careers and decided to teach myself programming.
-                    I discovered that I love learning and problem-solving, and I also love how programming brings out my creative side.
+                    In college, I took a few computer science electives for fun, and I remembered how much I appreciated the scalability and endless possibilities that coding offers. In the midst of the pandemic, I took a leap of faith to switch careers and decided to teach myself programming.
+                    I discovered that I love learning and problem-solving, and I love how programming brings out my creative side.
                 </div>
                 <div>My goal is to create visually pleasing and responsive apps that have the ability to better people’s lives 🌟</div>
-                <div>Some other things I enjoy:
-                    doing yoga 🙆🏻‍♀️
+                <div>Some other things that bring me joy:
+                    yoga 🙆🏻‍♀️
                     lifting weights at the gym 🏋🏻‍♀️
                     meditating 🧘🏻‍♀️
                     journaling ✍🏻

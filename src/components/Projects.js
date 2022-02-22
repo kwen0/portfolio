@@ -25,7 +25,7 @@ function Projects() {
                         <TechStack>React, Styled Components, Firebase, HTML5, CSS3, Google Books API</TechStack>
                     </InfoContainer>
                     <Links>
-                        <a>Live demo</a>
+                        <a href='https://myreads-a5b74.web.app/'>Live demo</a>
                         |
                         <a href='https://github.com/kwen0/myreads'>Repository</a>
                     </Links>
