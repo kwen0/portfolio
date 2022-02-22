@@ -1,99 +1,170 @@
-import React from "react";
-import "../styles/Projects.css";
-import FolderOpenRoundedIcon from "@material-ui/icons/FolderOpenRounded";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import OpenInBrowserIcon from "@material-ui/icons/OpenInBrowser";
-import FadeInSection from "./FadeInSection";
+import styled from 'styled-components'
+import myreads from '../assets/myreads.png';
+import myreads2 from '../assets/myreads2.png';
+import dainty from '../assets/dainty.png';
+import dainty2 from '../assets/dainty2.png';
+import weatherflow from '../assets/weatherflow.png';
+import taskbook from '../assets/taskbook.png';
 
-class Projects extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      expanded: true,
-      activeKey: "1"
-    };
-    this.handleSelect = this.handleSelect.bind(this);
-  }
-  handleSelect(eventKey) {
-    this.setState({
-      activeKey: eventKey
-    });
-  }
-  render() {
-    const projects = {
-      "Dainty": {
-        desc:
-          "",
-        techStack: "",
-        link: "https://github.com/kwen0/shopping-cart",
-        open: "https://kwen0.github.io/shopping-cart/"
-      },
-      "WeatherFlow": {
-        desc:
-          "",
-        techStack: "",
-        link: "https://github.com/kwen0/weather-app",
-        open: "https://kwen0.github.io/weather-app/"
-      },
-      "Taskbook": {
-        desc:
-          "",
-        techStack: "",
-        link: "https://github.com/kwen0/todo-list",
-        open: "https://kwen0.github.io/todo-list/"
-      }
-    };
-
+function Projects() {
     return (
-      <div id="projects">
-        <div className="section-header ">
-          <span className="section-title">/ projects</span>
-        </div>
+        <StyledProjects>
+            <Proj>
+                <div className="figure">
+                    <img className="image-main" src={myreads2} />
+                    <img className="image-hover" src={myreads} />
+                </div>
+                <Info>
+                    <InfoContainer>
+                        <ProjTitle>
+                            Myreads
+                        </ProjTitle>
+                        <ProjDesc>
+                            A Goodreads clone that allows users to search for books
+                        </ProjDesc>
+                        <TechStack>React, Styled Components, Firebase, HTML5, CSS3, Google Books API</TechStack>
+                    </InfoContainer>
+                    <Links>
+                        <a>Live demo</a>
+                        |
+                        <a href='https://github.com/kwen0/myreads'>Repository</a>
+                    </Links>
+                </Info>
+            </Proj>
+            <Proj>
+                <div className="figure">
+                    <img className="image-main" src={dainty} />
+                    <img className="image-hover" src={dainty2} />
+                </div>
+                <Info>
+                    <InfoContainer>
+                        <ProjTitle>
+                            Dainty
+                        </ProjTitle>
+                        <ProjDesc>
+                            A single-page e-commerce application with shopping cart capabilities
+                        </ProjDesc>
+                        <TechStack>React, HTML5, CSS3</TechStack>
+                    </InfoContainer>
+                    <Links>
+                        <a href='https://kwen0.github.io/shopping-cart'>Live demo</a>
+                        |
+                        <a href='https://github.com/kwen0/shopping-cart'>Repository</a>
+                    </Links>
+                </Info>
+            </Proj>
+            <Proj>
+                <div className="figure">
+                    <img className="image-main" src={weatherflow} />
+                </div>
+                <Info>
+                    <InfoContainer>
+                        <ProjTitle>
+                            WeatherFlow
+                        </ProjTitle>
+                        <ProjDesc>
+                            A weather application that enables users to search weather forecasts by city
+                        </ProjDesc>
+                        <TechStack>JavaScript, HTML5, CSS3, OpenWeather API, Unsplash API</TechStack>
+                    </InfoContainer>
+                    <Links>
+                        <a href='https://kwen0.github.io/weather-app'>Live demo</a>
+                        |
+                        <a href='https://github.com/kwen0/weather-app'>Repository</a>
+                    </Links>
+                </Info>
+            </Proj>
+            <Proj>
+                <div className="figure">
+                    <img className="image-main" src={taskbook} />
+                </div>
+                <Info>
+                    <InfoContainer>
+                        <ProjTitle>
+                            Taskbook
+                        </ProjTitle>
+                        <ProjDesc>
+                            A project manager app where users can manage to-do items for each project
+                        </ProjDesc>
+                        <TechStack>JavaScript, HTML5, CSS3, Webpack</TechStack>
+                    </InfoContainer>
+                    <Links>
+                        <a href='https://kwen0.github.io/todo-list'>Live demo</a>
+                        |
+                        <a href='https://github.com/kwen0/todo-list'>Repository</a>
+                    </Links>
+                </Info>
+            </Proj>
 
-        <div className="project-container">
-          <ul className="projects-grid">
-            {Object.keys(projects).map((key, i) => (
-              <FadeInSection delay={`${i + 1}00ms`}>
-                <li className="projects-card">
-                  <div className="card-header">
-                    <div className="folder-icon">
-                      <FolderOpenRoundedIcon
-                        style={{ fontSize: 35 }}
-                      ></FolderOpenRoundedIcon>
-                    </div>
-                    <span className="external-links">
-                      <a className="github-icon" href={projects[key]["link"]}>
-                        <GitHubIcon
-                          style={{
-                            fontSize: 20,
-                            color: "var(--lightest-slate)"
-                          }}
-                        ></GitHubIcon>
-                      </a>
-                      {projects[key]["open"] && (
-                        <a className="open-icon" href={projects[key]["open"]}>
-                          <OpenInBrowserIcon
-                            style={{
-                              fontSize: 25,
-                              color: "var(--lightest-slate)"
-                            }}
-                          ></OpenInBrowserIcon>
-                        </a>
-                      )}
-                    </span>
-                  </div>
-
-                  <div className="card-title">{key}</div>
-                  <div className="card-desc">{projects[key]["desc"]}</div>
-                  <div className="card-tech">{projects[key]["techStack"]}</div>
-                </li>
-              </FadeInSection>
-            ))}
-          </ul>
-        </div>
-      </div>
-    );
-  }
+        </StyledProjects>
+    )
 }
 
+const StyledProjects = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    overflow: scroll;
+    gap: 1em;
+    padding: 2em 0em;
+    @media only screen and (max-width: 600px) {
+        padding: 1.5em 0em;
+        gap: 1.5em;
+    }
+`
+const Proj = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    gap: 2em;
+    @media only screen and (max-width: 600px) {
+        flex-direction: column;
+        width: 100vw;
+        gap: 0em;
+    }
+`
+const ProjTitle = styled.h1`
+    font-family: 'Contrail One', cursive;
+    font-size: 18px;
+    padding: 0px;
+    margin-top: 0px;
+    @media only screen and (max-width: 600px) {
+        margin-bottom: 0px;
+    }
+`
+const Links = styled.div`
+    font-size: 14px;
+    display: flex;
+    gap: 0.5em;
+`
+const InfoContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    @media only screen and (max-width: 600px) {
+        gap: 2px;
+    }
+`
+const ProjDesc = styled.div`
+    font-size: 14px;
+`
+const TechStack = styled.div`
+    font-size: 14px;
+    font-style: italic;
+`
+const Info = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 25vw;
+    @media only screen and (max-width: 600px) {
+        width: 80vw;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+`
 export default Projects;

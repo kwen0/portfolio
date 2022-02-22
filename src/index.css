@@ -1,0 +1,105 @@
+body { 
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.active{
+  opacity: 0.5
+}
+
+a {
+  text-decoration: none;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 17px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #595959;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #103b2a;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 17px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.figure {
+  position: relative;
+}
+
+.figure img.image-hover {
+position: absolute;
+top: 0;
+right: 0;
+left: 0;
+bottom: 0;
+object-fit: contain;
+opacity: 0;
+transition: opacity .2s;
+}
+.figure:hover img.image-hover {
+opacity: 1;
+}
+
+img { 
+  height: 200px;
+  border-radius: 5px;
+}
