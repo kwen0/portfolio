@@ -11,7 +11,7 @@ function About() {
                 <div>I am a former healthcare professional turned software engineer 👩🏻‍💻</div>
                 <div>In my previous role, I loved meeting and caring for people from all walks of life, but found that I was constantly craving a bigger challenge. </div>
                 <div>
-                    When I was in college, I took a few computer science electives for fun, and I remembered how much I appreciated the scalability and endless possibilities that coding offers.
+                    In college, I took a few computer science electives for fun, and I remembered how much I appreciated the scalability and endless possibilities that coding offers.
                     I took a leap of faith to switch career paths and decided to teach myself programming.
                     I discovered that I love learning and problem-solving, and I love how programming brings out my creative side.
                 </div>
